@@ -1,0 +1,6 @@
+@use "../../assets/mixins";
+
+.footerContainer {
+    @include mixins.bars;
+    bottom: 0;
+}

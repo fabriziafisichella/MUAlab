@@ -1,0 +1,12 @@
+.mainContainer {
+    background-color: #93a996;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    -ms-scroll-snap-destination: 0 0;
+    scroll-snap-destination: 0 0;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}

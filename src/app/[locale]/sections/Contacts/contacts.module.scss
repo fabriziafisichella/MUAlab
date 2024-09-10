@@ -1,0 +1,6 @@
+@use "../../assets/mixins";
+
+.container {
+    @include mixins.sectionDisposition;
+
+}

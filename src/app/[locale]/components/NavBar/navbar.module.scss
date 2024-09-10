@@ -1,0 +1,57 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.navbarContainer {
+    @include mixins.bars;
+    top: 0;
+
+    .image {
+        width: auto;
+        height: 30px;
+
+        @media screen and (min-width: 640px) {
+            height: 40px;
+        }
+    }
+
+    .mobileMenu {
+        display: flex;
+        align-items: center;
+    }
+
+    .desktopMenu {
+        display: none;
+
+    }
+
+    .menuFloat {
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        width: 200px;
+        background-color: #fff;
+        border-bottom-left-radius: 10px;
+        padding-block: 20px;
+
+        .dropdownMenu {
+            @include mixins.menu;
+            text-align: center;
+            padding: 20px;
+            padding-top: 10px;
+        }
+    }
+
+    .link {
+        @include mixins.menu;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .mobileMenu {
+        display: none !important;
+    }
+
+    .desktopMenu {
+        display: flex !important;
+    }
+}

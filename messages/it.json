@@ -1,0 +1,11 @@
+{
+    "Hero": {
+      "motto": "Lorem ipsum dolor sit amet.",
+      "academy": "Accademia di Make-Up"
+    },
+    "About": {
+      "school": "La scuola",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequuntur nobis aut totam incidunt!",
+      "teachers": "I docenti"
+    }
+  }

@@ -1,0 +1,22 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.button {
+    border: 0;
+    background: none;
+    font-family: variables.$main-font;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.35s all ease-in-out;
+
+    &:hover {
+        color: variables.$main-color;
+    }
+}
+
+@media screen and (min-width: 850px) {
+  .button {
+    font-size: 25px;
+  }
+}

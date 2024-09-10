@@ -1,0 +1,59 @@
+@use "../../assets/mixins";
+@use "../../assets/variables";
+
+.container {
+    @include mixins.sectionDisposition;
+
+    .section {
+        @include mixins.subSection;
+        padding: 30px;
+
+        h2 {
+            @include mixins.title;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            @include mixins.subtitle;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 900px) {
+            padding: 50px;
+        }
+
+
+        .littleSection {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .carousel {
+                display: flex;
+                justify-content: center;
+
+                .carouselCard {
+                    height: 200px;
+                    width: 150px;
+                    background: variables.$secondary-color;
+                    margin: 5px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .image {
+        background-image: url("../../assets/images/aboutus.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
